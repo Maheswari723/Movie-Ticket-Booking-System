@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+
+    <style>
+        /* CSS for background image */
+        body {
+            background-image: url('bg.jfif'); /* Replace 'background-image.jpg' with your image URL */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #fff;
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+        }
+
+        /* CSS for animation */
+        .hero {
+            text-align: center;
+            animation: fadeInUp 1.5s ease both;
+            padding: 100px 0;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Additional CSS styles for hero elements */
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #fff; /* Text color */
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #fff; /* Text color */
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #FF5722; /* Button background color */
+            color: #fff; /* Button text color */
+            font-size: 20px; /* Button font size */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #E64A19; /* Hover background color */
+        }
+
+        /* Animation for the button */
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h2 style="color:#000000"><b>Book Your Movie Tickets Online</b></h2>
+        <p style="color:#000000"><b>Experience the latest blockbusters in the comfort of our theaters.</b></p>
+        <a href="#" class="cta-button">MOVIE BOOKING SYSTEM</a>
+    </section>
+<header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+               
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="about-us">
+        <div class="container">
+            <h3>About Us</h3>
+            <p style="color:#000000">We are your premier destination for movie entertainment. Our theaters offer the latest movies and a comfortable viewing experience for all movie enthusiasts.</p>
+        </div>
+    </section>
+    <!-- Add more sections and content for your home page here -->
+
+</body>
+</html>

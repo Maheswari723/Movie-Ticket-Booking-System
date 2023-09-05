@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Movie Booking</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body class="contact">
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="cinemas.html">Cinemas</a></li>
+                <li><a href="contact.html">Contact</a></li> <!-- Link to this page -->
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form">
+        <h2>Send us a message</h2>
+        <form action="submit_contact.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+        <!-- The rest of your Contact Us page content -->
+    
+    <footer>
+        <p>&copy; ENJOYED YOUR MOVIE?
+            ANY QUERIES?.</p>
+    </footer>
+</body>
+</html>

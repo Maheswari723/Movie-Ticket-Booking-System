@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body class="confirmation">
+    <header>
+        <h1>Confirmation</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li> <!-- Link to the Movies section -->
+                <li><a href="cinemas.html">Cinemas</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section class="confirmation">
+        <h2>Thank You for Booking</h2>
+        <p>Your movie tickets have been successfully booked.</p>
+
+        <div class="booking-details">
+            <p><strong>Movie:</strong> Movie Title 1</p>
+            <p><strong>Cinema Location:</strong> Cinema Location 1</p>
+            <p><strong>Date:</strong> January 15, 2023</p>
+            
+            <!-- Display the selected time from the URL parameter -->
+            <p><strong>Showtime:</strong> <span id="selected-time"></span></p>
+
+            <p><strong>Number of Tickets:</strong> 2</p>
+        </div>
+
+        <p>Please arrive at the cinema on time with your booking reference to collect your tickets.</p>
+
+        <!-- Add a link to return to the home page -->
+        
+    </section>
+
+
+
+    <script>
+        // JavaScript code to extract and display the selected time from URL parameter
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const selectedTime = params.get('time');
+            document.getElementById('selected-time').textContent = selectedTime;
+        });
+    </script>
+</body>
+</html>
